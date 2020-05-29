@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -11,6 +12,7 @@ body {
 .container {
   margin: 0 auto;
   width: 85%;
+  max-width: 1022px;
 }
 
 .section_titl {
@@ -116,20 +118,12 @@ nav li a:hover {
 
 /* --section top --*/
 #top {
+  background-image: url(./楕円形1.png);
+  background-position: top -150px right -120px;
+  background-size: auto;
+  background-repeat: no-repeat;
   height: 768px;
   position: relative;
-}
-
-.circle {
-  position: absolute;
-  top: -30px;
-  right: -85px;
-  display: block;
-  width: 708px;
-  height: 711px;
-  border-radius: 50%;
-  background: -webkit-gradient(linear, left top, right top, from(#63FBD7), to(#05A5FA));
-  background: linear-gradient(to right, #63FBD7, #05A5FA);
 }
 
 .top_massage {
@@ -167,8 +161,11 @@ nav li a:hover {
   position: absolute;
   top: 225px;
   left: 676px;
-  width: 518px;
-  height: 430px;
+}
+
+.top_img img {
+  width: 100%;
+  height: auto;
 }
 
 /* --features-- */
@@ -208,8 +205,10 @@ nav li a:hover {
           justify-content: space-between;
 }
 
-.feature img {
+.feature-img {
   margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
 
 .feature_msg {
@@ -329,7 +328,7 @@ dt.selected {
 
 .blog-articles article {
   position: relative;
-  width: 380px;
+  width: 320px;
   height: 387px;
   background: #fff;
 }
@@ -450,6 +449,7 @@ dt.selected {
 }
 
 .form-wrapper .input-box {
+  padding-left: 15px;
   height: 43px;
   width: 60%;
   margin-top: 35px;
@@ -458,6 +458,8 @@ dt.selected {
 }
 
 .form-wrapper .textarea-box {
+  padding-top: 15px;
+  padding-left: 15px;
   height: 179px;
   width: 97%;
   margin-top: 35px;
@@ -499,7 +501,7 @@ footer p {
 
 @media screen and (max-width: 767px) {
   .container {
-    width: 100%;
+    width: 90%;
   }
   .navbar {
     height: 60px;
@@ -543,9 +545,6 @@ footer p {
     position: static;
     height: auto;
   }
-  .circle {
-    display: none;
-  }
   .top_massage {
     position: static;
     margin: 0 auto;
@@ -579,6 +578,10 @@ footer p {
   .blog-articles article {
     margin: 30px auto;
   }
+  .blog-articles article p {
+    font-size: 12px;
+    letter-spacing: -2px;
+  }
   /* --contact-- */
   .form-wrapper {
     width: 65%;
@@ -587,4 +590,4 @@ footer p {
     width: 97%;
   }
 }
-/*# sourceMappingURL=your-coading_youtube.styles.css.map */
+/*# sourceMappingURL=styles.css.map */
