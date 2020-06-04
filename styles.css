@@ -9,6 +9,11 @@ body {
   width: 100%;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 .container {
   margin: 0 auto;
   width: 85%;
@@ -205,9 +210,9 @@ nav li a:hover {
           justify-content: space-between;
 }
 
-.feature-img {
+.feature .feature-img {
   margin: 0 auto;
-  width: 100%;
+  width: 50%;
   height: auto;
 }
 
@@ -521,6 +526,10 @@ footer p {
             justify-content: space-between;
     margin-left: 0;
   }
+  .navbar #spnavi .spnavi-logo {
+    width: 47px;
+    height: 47px;
+  }
   .navbar #drop_menu_text h1 {
     line-height: 44px;
     display: inline-block;
@@ -555,8 +564,16 @@ footer p {
     margin: 0 auto;
   }
   .top_img {
-    position: static;
+    width: 100%;
     margin: 0 auto;
+    position: static;
+    text-align: center;
+  }
+  .top_img img {
+    width: 80%;
+  }
+  .feature .feature-img {
+    width: 80%;
   }
   .feature_msg {
     margin: 30px auto;
